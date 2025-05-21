@@ -21,10 +21,11 @@ crash.*.log
 # Could contain name of VM, values which are not need to know. 
 *.tfvars
 *.tfvars.json
+variable.tf
+
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
-# 
 override.tf
 override.tf.json
 *_override.tf
