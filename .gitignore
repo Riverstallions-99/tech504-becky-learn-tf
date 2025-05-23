@@ -3,7 +3,6 @@
 # Not sensitive info - Mostly to avoid bloat in your git repo
 .terraform/
 
-
 # .tfstate files 
 # Very important to ignore, state info files like logs of what the state is, this can include credentials. 
 # If they need to be shared among a team, find a way around it.
@@ -22,7 +21,6 @@ crash.*.log
 *.tfvars
 *.tfvars.json
 variable.tf
-
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
