@@ -1,10 +1,9 @@
-# Creating an ec2 instance:
+# Create basic VM 
 
 provider "google" {
-  project = "sparta-academy-455414"
+  project = var.project
   region  = var.region
   zone    = var.zone
-  impersonate_service_account = "white.rebecca2012@gmail.com"
 }
 
 # define the resource
@@ -16,7 +15,7 @@ resource "google_compute_instance" "tech504-becky-tf-basic-vm" {
   }
 
   machine_type = var.machine_type
-  name = "tech504-becky-tf-app-vm"
+  name = var.instance-name
 
   network_interface {
     network = "default"
